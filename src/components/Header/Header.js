@@ -1,36 +1,21 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Header = () => {
+function Header({ activeTab, setActiveTab }) {
+    const handleTabChange = (tab) => {
+        setActiveTab(tab);
+    };
+
     return (
         <header>
-            <h1>Developer Name</h1>
             <nav>
-                <ul>
-                    <li>
-                        <NavLink to="/about" activeClassName="active">
-                            About Me
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/portfolio" activeClassName="active">
-                            Portfolio
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/contact" activeClassName="active">
-                            Contact
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/resume" activeClassName="active">
-                            Resume
-                        </NavLink>
-                    </li>
-                </ul>
+                <NavLink to="/about" onClick={() => handleTabChange('/about')}>About Me</NavLink>
+                <NavLink to="/portfolio" onClick={() => handleTabChange('/portfolio')}>Portfolio</NavLink>
+                <NavLink to="/contact" onClick={() => handleTabChange('/contact')}>Contact</NavLink>
+                <NavLink to="/resume" onClick={() => handleTabChange('/resume')}>Resume</NavLink>
             </nav>
         </header>
     );
-};
+}
 
 export default Header;

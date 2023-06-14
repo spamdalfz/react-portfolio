@@ -6,6 +6,7 @@ import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 import Footer from "./components/Footer";
+import { Helmet } from "react-helmet";
 
 function App() {
     const [activeTab, setActiveTab] = useState('/about');
