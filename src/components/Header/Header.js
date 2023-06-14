@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-function Header({ activeTab, setActiveTab }) {
+const Header = ({ setActiveTab }) => {
     const handleTabChange = (tab) => {
         setActiveTab(tab);
     };

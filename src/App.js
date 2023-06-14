@@ -8,7 +8,7 @@ import Resume from "./components/Resume";
 import Footer from "./components/Footer";
 import { Helmet } from "react-helmet";
 
-function App() {
+const App = () => {
     const [activeTab, setActiveTab] = useState('/about');
 
     return (
