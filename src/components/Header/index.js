@@ -7,32 +7,32 @@ const Header = ({ activeTab, setActiveTab }) => {
     };
 
     return (
-        <header>
-            <nav>
+        <header className="bg-black text-white p-5">
+            <nav className="flex justify-around">
                 <NavLink
                     to="/about"
-                    className={activeTab === '/about' ? 'active-link' : ''}
+                    className={activeTab === '/about' ? 'text-lg font-bold' : 'text-lg'}
                     onClick={() => handleTabChange('/about')}
                 >
                     About Me
                 </NavLink>
                 <NavLink
                     to="/portfolio"
-                    className={activeTab === '/portfolio' ? 'active-link' : ''}
+                    className={activeTab === '/portfolio' ? 'text-lg font-bold' : 'text-lg'}
                     onClick={() => handleTabChange('/portfolio')}
                 >
                     Portfolio
                 </NavLink>
                 <NavLink
                     to="/contact"
-                    className={activeTab === '/contact' ? 'active-link' : ''}
+                    className={activeTab === '/contact' ? 'text-lg font-bold' : 'text-lg'}
                     onClick={() => handleTabChange('/contact')}
                 >
                     Contact
                 </NavLink>
                 <NavLink
                     to="/resume"
-                    className={activeTab === '/resume' ? 'active-link' : ''}
+                    className={activeTab === '/resume' ? 'text-lg font-bold' : 'text-lg'}
                     onClick={() => handleTabChange('/resume')}
                 >
                     Resume
