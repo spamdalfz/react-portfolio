@@ -2,7 +2,11 @@ import React from 'react';
 import { useSpring, animated } from 'react-spring';
 
 const Project = ({ title, description, image, link, github }) => {
-    const springProps = useSpring({ to: { opacity: 1, scale: 1 }, from: { opacity: 0, scale: 0.5 }, delay: 200 });
+    const springProps = useSpring({
+        to: { opacity: 1, scale: 1 },
+        from: { opacity: 0, scale: 0.5 }, delay: 200,
+        config: { tension: 120, friction: 60 } // Adjust these values as per your requirements
+    });
 
     return (
         <div className="transform transition-transform duration-500 hover:scale-110">
