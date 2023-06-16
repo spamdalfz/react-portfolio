@@ -13,12 +13,12 @@ const Header = ({ activeTab, setActiveTab }) => {
                 backgroundImage: `url(${bgImage})`,
                 backgroundSize: 'cover'
             }}
-            className="bg-black text-white text-6xl p-20"
+            className="bg-black text-white text-6xl p-20 font-dancing"
         >
-            <nav className="flex justify-around">
+            <nav className="flex flex-wrap justify-around">
                 <NavLink
                     to="/about"
-                    className={`text-xl ${activeTab === '/about' ? 'underline font-bold text-teal-500' : ''} hover:text-blue-500`}
+                    className={`text-4xl m-2 ${activeTab === '/about' ? 'underline font-bold text-teal-500' : ''} hover:text-blue-500`}
                     onClick={() => handleTabChange('/about')}
                 >
                     About Me
@@ -26,21 +26,21 @@ const Header = ({ activeTab, setActiveTab }) => {
 
                 <NavLink
                     to="/portfolio"
-                    className={`text-xl ${activeTab === '/portfolio' ? 'underline font-bold text-teal-500' : ''} hover:text-blue-500`}
+                    className={`text-4xl m-2 ${activeTab === '/portfolio' ? 'underline font-bold text-teal-500' : ''} hover:text-blue-500`}
                     onClick={() => handleTabChange('/portfolio')}
                 >
                     Portfolio
                 </NavLink>
                 <NavLink
                     to="/contact"
-                    className={`text-xl ${activeTab === '/contact' ? 'underline font-bold text-teal-500' : ''} hover:text-blue-500`}
+                    className={`text-4xl m-2 ${activeTab === '/contact' ? 'underline font-bold text-teal-500' : ''} hover:text-blue-500`}
                     onClick={() => handleTabChange('/contact')}
                 >
                     Contact
                 </NavLink>
                 <NavLink
                     to="/resume"
-                    className={`text-xl ${activeTab === '/resume' ? 'underline font-bold text-teal-500' : ''} hover:text-blue-500`}
+                    className={`text-4xl m-2 ${activeTab === '/resume' ? 'underline font-bold text-teal-500' : ''} hover:text-blue-500`}
                     onClick={() => handleTabChange('/resume')}
                 >
                     Resume
@@ -49,5 +49,4 @@ const Header = ({ activeTab, setActiveTab }) => {
         </header>
     );
 }
-
 export default Header;

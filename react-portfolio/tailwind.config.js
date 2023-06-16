@@ -4,6 +4,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        'dancing': ['Dancing Script', 'cursive'],
+        'josefin': ['Josefin Sans', 'sans-serif'],
+      },
       backgroundColor: {
         'primary': 'var(--color-bg)',
       },

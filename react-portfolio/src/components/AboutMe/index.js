@@ -3,7 +3,7 @@ import profilePic from './images/profile-pic.jpg';
 
 const AboutMe = () => {
     return (
-        <div className="flex flex-col md:flex-row justify-center bg-gray-800 text-white min-h-screen py-10 px-4 md:px-20">
+        <div className="flex flex-col md:flex-row justify-center bg-gray-800 text-white min-h-screen py-10 px-4 md:px-20 font-josefin">
             <img src={profilePic} alt="Corey Vasser" className="w-28 h-28 rounded-full mx-auto md:mx-0 shadow-lg md:mb-0 md:mr-10" />
             <div className="text-center md:text-left space-y-4 w-full md:w-1/2">
                 <h1 className="text-3xl md:text-5xl font-bold mb-4">About Me</h1>

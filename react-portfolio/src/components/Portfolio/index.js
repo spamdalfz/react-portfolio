@@ -69,7 +69,7 @@ const Portfolio = () => {
     ];
 
     return (
-        <section className="bg-gray-800 text-white p-5">
+        <section className="bg-gray-800 text-white p-5 font-josefin">
             <h1 className="text-4xl font-bold mb-10 text-center">Portfolio</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto max-w-6xl items-center justify-center">
                 {projects.map(project => <Project key={project.title} {...project} />)}
