@@ -18,7 +18,7 @@ const Header = ({ activeTab, setActiveTab }) => {
             <nav className="flex flex-wrap justify-around">
                 <NavLink
                     to="/about"
-                    className={`text-4xl m-2 ${activeTab === '/about' ? 'underline font-bold text-teal-500' : ''} hover:text-blue-500`}
+                    className={`text-4xl m-2 ${activeTab === '/about' ? 'underline font-bold text-blue-400' : ''} hover:text-blue-500`}
                     onClick={() => handleTabChange('/about')}
                 >
                     About Me
@@ -26,21 +26,21 @@ const Header = ({ activeTab, setActiveTab }) => {
 
                 <NavLink
                     to="/portfolio"
-                    className={`text-4xl m-2 ${activeTab === '/portfolio' ? 'underline font-bold text-teal-500' : ''} hover:text-blue-500`}
+                    className={`text-4xl m-2 ${activeTab === '/portfolio' ? 'underline font-bold text-blue-400' : ''} hover:text-blue-500`}
                     onClick={() => handleTabChange('/portfolio')}
                 >
                     Portfolio
                 </NavLink>
                 <NavLink
                     to="/contact"
-                    className={`text-4xl m-2 ${activeTab === '/contact' ? 'underline font-bold text-teal-500' : ''} hover:text-blue-500`}
+                    className={`text-4xl m-2 ${activeTab === '/contact' ? 'underline font-bold text-blue-400' : ''} hover:text-blue-500`}
                     onClick={() => handleTabChange('/contact')}
                 >
                     Contact
                 </NavLink>
                 <NavLink
                     to="/resume"
-                    className={`text-4xl m-2 ${activeTab === '/resume' ? 'underline font-bold text-teal-500' : ''} hover:text-blue-500`}
+                    className={`text-4xl m-2 ${activeTab === '/resume' ? 'underline font-bold text-blue-400' : ''} hover:text-blue-500`}
                     onClick={() => handleTabChange('/resume')}
                 >
                     Resume
