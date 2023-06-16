@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import bgImage from '../Header/images/hero-bg.png';
+import bgImage from '../../../src/images/hero-bg.png';
 
 const Header = ({ activeTab, setActiveTab }) => {
     const handleTabChange = (tab) => {
