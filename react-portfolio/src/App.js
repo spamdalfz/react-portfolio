@@ -1,24 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from "./components/Header";
+import AboutMe from "./components/AboutMe";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
+import Resume from "./components/Resume";
+import Footer from "./components/Footer";
+import { Helmet } from "react-helmet";
 
-function App() {
+const App = () => {
+  const [activeTab, setActiveTab] = useState('/about');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Helmet>
+        <title>Portfolio</title>
+      </Helmet>
+      <div className="bg-primary text-primary min-h-screen">
+        <Header activeTab={activeTab} setActiveTab={setActiveTab} />
+        <Routes>
+          <Route path="/about" element={<AboutMe />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/" element={<AboutMe />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
