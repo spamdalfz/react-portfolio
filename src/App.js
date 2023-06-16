@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes, useNavigate } from "react-router-dom";
-import Header from "./components/Header/Header";
-import AboutMe from "./components/AboutMe/About";
-import Portfolio from "./components/Portfolio/Portfolio";
-import Contact from "./components/Contact/Contact";
-import Resume from "./components/Resume/Resume";
-import Footer from "./components/Footer/Footer";
+import Header from "./components/Header";
+import AboutMe from "./components/AboutMe";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
+import Resume from "./components/Resume";
+import Footer from "./components/Footer";
 import { Helmet } from "react-helmet";
 
 const App = () => {
