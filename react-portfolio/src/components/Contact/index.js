@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <section className="bg-gray-800 text-blue-400 p-5  font-josefin">
+        <section className="bg-gray-800 text-blue-400 p-5  font-josefin min-h-screen">
             <h1 className="text-4xl font-bold mb-10 text-center">Contact</h1>
             <div className="max-w-md mx-auto">
                 <form>

@@ -17,7 +17,7 @@ const App = () => {
       <Helmet>
         <title>Portfolio</title>
       </Helmet>
-      <div className="bg-primary text-primary min-h-screen">
+      <div className="min-h-screen">
         <Header activeTab={activeTab} setActiveTab={setActiveTab} />
         <Routes>
           <Route path="/about" element={<AboutMe />} />
@@ -31,5 +31,4 @@ const App = () => {
     </Router>
   );
 }
-
 export default App;
