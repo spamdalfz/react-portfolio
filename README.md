@@ -32,7 +32,21 @@ To run this project locally, follow the steps below:
 
 The application is deployed on GitHub Pages. The deployment is managed with the gh-pages package. The static files are built using the npm run build command, and then pushed to the gh-pages branch with gh-pages -d build.
 
-View the app live [here]().
+View the app live [here](https://spamdalfz.github.io/react-portfolio/).
+
+## Screenshots
+
+### About page
+![Alt Text](./images/about.JPG)
+
+### Portfolio page
+![Alt Text](./images/portfolio.JPG)
+
+### Contact page
+![Alt Text](./images/contact.JPG)
+
+### Resume page
+![Alt Text](./images/resume.JPG)
 
 
 ## License
