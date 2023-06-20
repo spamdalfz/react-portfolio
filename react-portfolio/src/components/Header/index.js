@@ -1,8 +1,14 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import bgImage from '../../../src/images/hero-bg.png';
 
 const Header = ({ activeTab, setActiveTab }) => {
+    const location = useLocation();
+
+    useEffect(() => {
+        setActiveTab(location.pathname);
+    }, [location.pathname, setActiveTab]);
+
     const handleTabChange = (tab) => {
         setActiveTab(tab);
     };
