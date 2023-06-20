@@ -50,7 +50,7 @@ const projects = [
         link: 'https://spamdalfz.github.io/daily-planner/',
         github: 'https://github.com/spamdalfz/daily-planner'
     },
-    // ...other projects
+    // ... more and future projects
 ];
 
 const Project = ({ title, description, image, link, github }) => {

@@ -27,7 +27,7 @@ const Resume = () => {
     ];
 
     return (
-        <div className="bg-gray-800 text-white p-5 font-josefin">
+        <div className="bg-gray-800 text-white p-5 font-josefin min-h-screen">
             <h1 className="text-4xl font-bold mb-10 text-center text-blue-400 transform hover:scale-110 motion-reduce:transform-none transition-transform ease-out duration-500">Resume</h1>
             <div className="max-w-md mx-auto">
                 <h2 className="text-2xl font-bold my-5 text-center">Front-End Proficiencies</h2>

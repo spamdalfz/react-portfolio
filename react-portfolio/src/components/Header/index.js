@@ -48,4 +48,5 @@ const Header = ({ activeTab, setActiveTab }) => {
         </header>
     );
 }
+
 export default Header;
