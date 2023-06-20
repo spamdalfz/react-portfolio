@@ -6,7 +6,7 @@ Modal.setAppElement('#root');
 
 const Resume = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
-    const resumePath = process.env.PUBLIC_URL + '/Corey_Vasser_Resume_2023.pdf';
+    const resumePath = process.env.PUBLIC_URL + '/resume/Corey_Vasser_Resume_2023.pdf';
     const frontEndSkills = [
         'HTML5',
         'CSS3',

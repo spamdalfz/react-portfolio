@@ -6,12 +6,9 @@ const Header = ({ activeTab, setActiveTab }) => {
     const location = useLocation();
 
     useEffect(() => {
-        setActiveTab(location.pathname);
-    }, [location.pathname, setActiveTab]);
-
-    const handleTabChange = (tab) => {
-        setActiveTab(tab);
-    };
+        const pathname = location.pathname.endsWith('/') ? location.pathname.slice(0, -1) : location.pathname;
+        setActiveTab(pathname);
+    }, [location, setActiveTab]);
 
     return (
         <header
@@ -25,7 +22,6 @@ const Header = ({ activeTab, setActiveTab }) => {
                 <NavLink
                     to="/about"
                     className={`text-4xl m-2 ${activeTab === '/about' ? 'underline font-bold text-blue-400' : ''} hover:text-blue-500`}
-                    onClick={() => handleTabChange('/about')}
                 >
                     About Me
                 </NavLink>
@@ -33,21 +29,18 @@ const Header = ({ activeTab, setActiveTab }) => {
                 <NavLink
                     to="/portfolio"
                     className={`text-4xl m-2 ${activeTab === '/portfolio' ? 'underline font-bold text-blue-400' : ''} hover:text-blue-500`}
-                    onClick={() => handleTabChange('/portfolio')}
                 >
                     Portfolio
                 </NavLink>
                 <NavLink
                     to="/contact"
                     className={`text-4xl m-2 ${activeTab === '/contact' ? 'underline font-bold text-blue-400' : ''} hover:text-blue-500`}
-                    onClick={() => handleTabChange('/contact')}
                 >
                     Contact
                 </NavLink>
                 <NavLink
                     to="/resume"
                     className={`text-4xl m-2 ${activeTab === '/resume' ? 'underline font-bold text-blue-400' : ''} hover:text-blue-500`}
-                    onClick={() => handleTabChange('/resume')}
                 >
                     Resume
                 </NavLink>
