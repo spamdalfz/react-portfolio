@@ -2,8 +2,10 @@ import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import employeetracker from '../../../src/images/employeetracker.JPG';
 import notetaker from '../../../src/images/note-taker.JPG';
-import weatherdashboard from '../../../src/images/weather-dashboard.JPG'
-import ecommerce from '../../../src/images/ecommerce.JPG'
+import weatherdashboard from '../../../src/images/weather-dashboard.JPG';
+import ecommerce from '../../../src/images/ecommerce.JPG';
+import readme from '../../../src/images/readme.gif';
+import dailyplanner from '../../../src/images/daily-planner.JPG';
 
 const projects = [
     {
@@ -35,20 +37,20 @@ const projects = [
         github: 'https://github.com/spamdalfz/e-commerce-back-end'
     },
     {
-        title: "Project",
-        description: "Short description of Project 1",
-        image: 'path_to_project1_image',
-        link: 'link_to_project1',
-        github: 'link_to_project1_github'
+        title: "README.md Generator",
+        description: "Application to generate a professional README by answering questions in the command line using Node.js.",
+        image: readme,
+        link: '',
+        github: 'https://github.com/spamdalfz/readme-generator'
     },
     {
-        title: "Project 1",
-        description: "Short description of Project 1",
-        image: 'path_to_project1_image',
-        link: 'link_to_project1',
-        github: 'link_to_project1_github'
+        title: "Daily Planner",
+        description: "Daily planner that will save user inputs and display color coded time blocks for past, present, and future.",
+        image: dailyplanner,
+        link: 'https://spamdalfz.github.io/daily-planner/',
+        github: 'https://github.com/spamdalfz/daily-planner'
     },
-    // ...your other projects
+    // ...other projects
 ];
 
 const Project = ({ title, description, image, link, github }) => {
