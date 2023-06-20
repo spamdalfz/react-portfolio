@@ -32,7 +32,7 @@ To run this project locally, follow the steps below:
 
 The application is deployed on GitHub Pages. The deployment is managed with the gh-pages package. The static files are built using the npm run build command, and then pushed to the gh-pages branch with gh-pages -d build.
 
-View the app live [here](https://drive.google.com/file/d/1cnt5tiqcQcCrGN9lKpp_BA1Gg0pq9Bsu/view).
+View the app live [here]().
 
 
 ## License
