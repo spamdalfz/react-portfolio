@@ -4,10 +4,13 @@ import bgImage from '../../../src/images/hero-bg.png';
 
 const Header = ({ activeTab, setActiveTab }) => {
     const location = useLocation();
-
     useEffect(() => {
-        const pathname = location.pathname.endsWith('/') ? location.pathname.slice(0, -1) : location.pathname;
-        setActiveTab(pathname);
+        const pathname = location.pathname.endsWith('/')
+            ? location.pathname.slice(0, -1)
+            : location.pathname;
+
+        const currentTab = pathname === '' ? '/about' : pathname;
+        setActiveTab(currentTab);
     }, [location, setActiveTab]);
 
     return (
