@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.b89b6f69.css",
-    "main.js": "/react-portfolio/static/js/main.c2da7e11.js",
-    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
-    "static/media/hero-bg.png": "/react-portfolio/static/media/hero-bg.99ae0c123d0565d2abf5.png",
-    "static/media/readme.gif": "/react-portfolio/static/media/readme.f8d033d2e3b9f168290c.gif",
-    "static/media/daily-planner.JPG": "/react-portfolio/static/media/daily-planner.63e554fe1fe403d14c56.JPG",
-    "static/media/weather-dashboard.JPG": "/react-portfolio/static/media/weather-dashboard.6baaedc9c8c5244e85d8.JPG",
-    "static/media/profile-pic.jpg": "/react-portfolio/static/media/profile-pic.6377a436b592789f6a74.jpg",
-    "static/media/employeetracker.JPG": "/react-portfolio/static/media/employeetracker.a884371271001ee081ad.JPG",
-    "static/media/ecommerce.JPG": "/react-portfolio/static/media/ecommerce.1cd37289812d9f1575f0.JPG",
-    "static/media/note-taker.JPG": "/react-portfolio/static/media/note-taker.306a3ae37cd439265b0b.JPG",
-    "index.html": "/react-portfolio/index.html",
-    "main.b89b6f69.css.map": "/react-portfolio/static/css/main.b89b6f69.css.map",
-    "main.c2da7e11.js.map": "/react-portfolio/static/js/main.c2da7e11.js.map",
-    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+    "main.css": "/react-portfolio/about/static/css/main.b89b6f69.css",
+    "main.js": "/react-portfolio/about/static/js/main.68c4fda8.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/about/static/js/787.a2cb61a6.chunk.js",
+    "static/media/hero-bg.png": "/react-portfolio/about/static/media/hero-bg.99ae0c123d0565d2abf5.png",
+    "static/media/readme.gif": "/react-portfolio/about/static/media/readme.f8d033d2e3b9f168290c.gif",
+    "static/media/daily-planner.JPG": "/react-portfolio/about/static/media/daily-planner.63e554fe1fe403d14c56.JPG",
+    "static/media/weather-dashboard.JPG": "/react-portfolio/about/static/media/weather-dashboard.6baaedc9c8c5244e85d8.JPG",
+    "static/media/profile-pic.jpg": "/react-portfolio/about/static/media/profile-pic.6377a436b592789f6a74.jpg",
+    "static/media/employeetracker.JPG": "/react-portfolio/about/static/media/employeetracker.a884371271001ee081ad.JPG",
+    "static/media/ecommerce.JPG": "/react-portfolio/about/static/media/ecommerce.1cd37289812d9f1575f0.JPG",
+    "static/media/note-taker.JPG": "/react-portfolio/about/static/media/note-taker.306a3ae37cd439265b0b.JPG",
+    "index.html": "/react-portfolio/about/index.html",
+    "main.b89b6f69.css.map": "/react-portfolio/about/static/css/main.b89b6f69.css.map",
+    "main.68c4fda8.js.map": "/react-portfolio/about/static/js/main.68c4fda8.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/about/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b89b6f69.css",
-    "static/js/main.c2da7e11.js"
+    "static/js/main.68c4fda8.js"
   ]
 }
