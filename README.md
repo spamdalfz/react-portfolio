@@ -55,7 +55,7 @@ This project is licensed under the MIT license. Click [here](https://opensource.
 
 ## Contributing
 
-If you have suggestions for how this project could be improved, or want to report a bug, open an issue! Contributions are always welcome.
+If you have suggestions for how this project could be improved, or want to report a bug, open an issue. Contributions are always welcome.
 
 ## Tests
 
