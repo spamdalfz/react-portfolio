@@ -10,10 +10,12 @@ const Resume = () => {
     const frontEndSkills = [
         'HTML5',
         'CSS3',
+        'React',
         'JavaScript ES6+',
         'jQuery',
         'Bootstrap',
-        'Tailwind CSS'
+        'Tailwind CSS',
+        'Figma'
     ];
     const backEndSkills = [
         'Node.js',
