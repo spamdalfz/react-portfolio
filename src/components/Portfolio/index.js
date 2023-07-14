@@ -18,7 +18,7 @@ const projects = [
     },
     {
         title: "Story Share",
-        description: "A MERN stack, single-page platform empowering writers to co-create, exchange prompts, and weave stories within a dynamic, shared environment.",
+        description: "MERN stack, single-page hub enabling writers to jointly craft, share prompts, and spin narratives within a vibrant, collaborative space.",
         image: storyshare,
         link: 'https://storyshare-33372975577a.herokuapp.com/',
         github: 'https://github.com/keberlea/storyshare'
