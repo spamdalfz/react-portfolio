@@ -6,6 +6,7 @@ import weatherdashboard from '../../../src/images/weather-dashboard.JPG';
 import ecommerce from '../../../src/images/ecommerce.JPG';
 import readme from '../../../src/images/readme.gif';
 import dailyplanner from '../../../src/images/daily-planner.JPG';
+import storyshare from '../../../src/images/storyshare.JPG';
 
 const projects = [
     {
@@ -14,6 +15,13 @@ const projects = [
         image: employeetracker,
         link: '',
         github: 'https://github.com/spamdalfz/employee-tracker'
+    },
+    {
+        title: "Story Share",
+        description: "A MERN stack, single-page platform empowering writers to co-create, exchange prompts, and weave stories within a dynamic, shared environment.",
+        image: storyshare,
+        link: 'https://storyshare-33372975577a.herokuapp.com/',
+        github: 'https://github.com/keberlea/storyshare'
     },
     {
         title: "Note Taker",
