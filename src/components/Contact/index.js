@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+    const [isSubmitted, setIsSubmitted] = useState(false);
+    const [hasError, setHasError] = useState(false);
+
     const sendEmail = (e) => {
         e.preventDefault();
 
@@ -13,8 +16,12 @@ const Contact = () => {
         )
             .then((result) => {
                 console.log(result.text);
+                setIsSubmitted(true);
+                setHasError(false);
             }, (error) => {
                 console.log(error.text);
+                setIsSubmitted(false);
+                setHasError(true);
             });
         e.target.reset()
     }
@@ -36,6 +43,8 @@ const Contact = () => {
                         <textarea name="message" required className="w-full px-3 py-2 rounded-lg border border-gray-600 focus:outline-none focus:border-blue-500 h-32" />
                     </label>
                     <input type="submit" value="Submit" className="block mt-5 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg cursor-pointertransform hover:scale-110 motion-reduce:transform-none transition-transform ease-out duration-500" />
+                    {isSubmitted && <div className="mt-5 text-green-500">Your message has been sent successfully!</div>}
+                    {hasError && <div className="mt-5 text-red-500">Oops! There was an error sending your message.</div>}
                 </form>
             </div>
         </section>
