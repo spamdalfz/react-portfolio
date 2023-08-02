@@ -16,15 +16,10 @@ const Contact = () => {
                     </label>
                     <label className="block mt-5">
                         <span className="text-xl mb-2">Message:</span>
-                        <textarea name="message" required disabled className="w-full px-3 py-2 rounded-lg border border-gray-600 focus:outline-none focus:border-blue-500 h-32" />
+                        <textarea name="message" required className="w-full px-3 py-2 rounded-lg border border-gray-600 focus:outline-none focus:border-blue-500 h-32" />
                     </label>
                     <input type="submit" value="Submit" className="block mt-5 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg cursor-pointertransform hover:scale-110 motion-reduce:transform-none transition-transform ease-out duration-500" />
                 </form>
-                <p className="text-white mt-5">
-                    Note: Currently, the form functionality is disabled. You can contact me at <a href="mailto:coreyvasser@gmail.com" className="text-blue-400">coreyvasser@gmail.com</a>,
-                    or visit my <a href="https://github.com/spamdalfz" className="text-blue-400">GitHub</a> or
-                    <a href="https://www.linkedin.com/in/coreyvasser/" className="text-blue-400"> LinkedIn</a>.
-                </p>
             </div>
         </section>
     )
